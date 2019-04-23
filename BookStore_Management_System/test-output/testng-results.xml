@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="17243" started-at="2019-04-22T20:54:32Z" finished-at="2019-04-22T20:54:49Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="17243" started-at="2019-04-22T20:54:32Z" finished-at="2019-04-22T20:54:49Z">
+      <class name="com.sai.store.books.textbooks.test.TextBooksTests">
+        <test-method status="PASS" signature="springTestContextBeforeTestClass()[pri:0, instance:com.sai.store.books.textbooks.test.TextBooksTests@399c4be1]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="15" started-at="2019-04-22T20:54:32Z" finished-at="2019-04-22T20:54:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method status="PASS" signature="springTestContextPrepareTestInstance()[pri:0, instance:com.sai.store.books.textbooks.test.TextBooksTests@399c4be1]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="14313" started-at="2019-04-22T20:54:32Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2019-04-22T20:54:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:com.sai.store.books.textbooks.test.TextBooksTests@399c4be1]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="16" started-at="2019-04-22T20:54:47Z" finished-at="2019-04-22T20:54:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sai.store.books.textbooks.test.TextBooksTests.getAllTextBooks()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="getAllTextBooks()[pri:0, instance:com.sai.store.books.textbooks.test.TextBooksTests@399c4be1]" name="getAllTextBooks" duration-ms="2855" started-at="2019-04-22T20:54:47Z" finished-at="2019-04-22T20:54:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllTextBooks -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:com.sai.store.books.textbooks.test.TextBooksTests@399c4be1]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="1" started-at="2019-04-22T20:54:49Z" finished-at="2019-04-22T20:54:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.sai.store.books.textbooks.test.TextBooksTests.getAllTextBooks()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:com.sai.store.books.textbooks.test.TextBooksTests@399c4be1]" name="springTestContextAfterTestClass" is-config="true" duration-ms="0" started-at="2019-04-22T20:54:49Z" finished-at="2019-04-22T20:54:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+      </class> <!-- com.sai.store.books.textbooks.test.TextBooksTests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
