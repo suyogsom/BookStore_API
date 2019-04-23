@@ -17,31 +17,31 @@ public class TextBooksController {
 	
 	
 	//get list of all text books
-	@RequestMapping("/books/textbooks")
+	@RequestMapping("/books/textbooks/getall")
 	public List<TextBooks> getAllTextbooks()
 	{	return textBooksService.getAllTextbooks();  }
 	
 	
 	// gets only particular text book
-	@RequestMapping("/books/textbooks/{id}")  
+	@RequestMapping("/books/textbooks/getone/{id}")  
 	public TextBooks getTextbook(@PathVariable String id)  
 	{	return textBooksService.getTextbook(id);	}
 	
 	
 	// create text book
-	@RequestMapping(method=RequestMethod.POST, value="/books/textbooks") 
+	@RequestMapping(method=RequestMethod.POST, value="/books/textbooks/add") 
 	public void addTextbook(@RequestBody TextBooks textbook)  
 	{	textBooksService.addTextbook(textbook);   }
 		
 	
 	// update text book
-	@RequestMapping(method=RequestMethod.PUT, value="/books/textbooks/{id}") 
+	@RequestMapping(method=RequestMethod.PUT, value="/books/textbooks/update/{id}") 
 	public void updateTextbook(@RequestBody TextBooks textbook, @PathVariable String id)  
 	{	textBooksService.updateTextbook(textbook, id);   }
 			
 		
 	// delete text book
-	@RequestMapping(method=RequestMethod.DELETE, value="/books/textbooks/{id}") 
+	@RequestMapping(method=RequestMethod.DELETE, value="/books/textbooks/delete/{id}") 
 	public void deleteTextbook( @PathVariable String id)  
 	{   textBooksService.deleteTextbook(id);	}
 					
