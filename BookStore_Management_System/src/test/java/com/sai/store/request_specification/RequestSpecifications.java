@@ -1,5 +1,6 @@
 package com.sai.store.request_specification;
 
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 
 import io.restassured.builder.RequestSpecBuilder;
@@ -13,7 +14,8 @@ public class RequestSpecifications {
 	public RequestSpecification getRecSpec() {
 		return requestSpecification;
 	}
-	@BeforeEach
+	
+	//@BeforeAll
 	public void init()
 	{
 		requestSpecification = new RequestSpecBuilder().setContentType(ContentType.JSON)

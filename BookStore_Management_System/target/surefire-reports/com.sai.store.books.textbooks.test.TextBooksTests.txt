@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.sai.store.books.textbooks.test.TextBooksTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 29.967 s <<< FAILURE! - in com.sai.store.books.textbooks.test.TextBooksTests
-getAllTextBooks  Time elapsed: 6.005 s  <<< ERROR!
+Tests run: 3, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 23.207 s <<< FAILURE! - in com.sai.store.books.textbooks.test.TextBooksTests
+getAllTextBooks  Time elapsed: 5.108 s  <<< ERROR!
 java.net.ConnectException: Connection refused: connect
-	at com.sai.store.books.textbooks.test.TextBooksTests.getAllTextBooks(TextBooksTests.java:30)
+	at com.sai.store.books.textbooks.test.TextBooksTests.getAllTextBooks(TextBooksTests.java:29)
 

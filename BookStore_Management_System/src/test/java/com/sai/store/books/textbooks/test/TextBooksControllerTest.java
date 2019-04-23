@@ -4,28 +4,26 @@ import static io.restassured.RestAssured.given;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
-import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.ContextConfiguration;
-import org.springframework.test.context.junit.jupiter.SpringExtension;
-import org.springframework.transaction.annotation.Transactional;
+import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
 
-import io.restassured.*;
+import com.sai.store.request_specification.RequestSpecifications;
+
+import io.restassured.RestAssured;
 import io.restassured.response.Response;
 
-@ExtendWith(SpringExtension.class) 
-@SpringBootTest  
-public class TextBooksTests  {
+//@ExtendWith(SpringExtension.class) 
+@SpringBootTest(webEnvironment = WebEnvironment.DEFINED_PORT)
+public class TextBooksControllerTest extends RequestSpecifications {
 	
-	TextBooksTests textBooksTests;
+	RequestSpecifications textBooksTests;
 	
 	@Test
 	@DisplayName("GET all text books")
 	public void getAllTextBooks()
 	{
 		RestAssured.baseURI = "http://localhost:8080";
-		Response res  = given().
+		Response res  = given(). //spec(textBooksTests.getRecSpec()).
 						when().get("/books/textbooks").	
 						then().assertThat().statusCode(200).and().extract().response();
 	
